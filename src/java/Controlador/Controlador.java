@@ -34,10 +34,10 @@ public class Controlador extends HttpServlet {
             case "Principal":
                 request.getRequestDispatcher("Principal.jsp").forward(request, response);
                 break;
-            case "Cursos":
+            case "Cursosal":
                 request.getRequestDispatcher("Cursos.jsp").forward(request, response);
                     break;
-            case "Notas":
+            case "Notasal":
                 request.getRequestDispatcher("Notas.jsp").forward(request, response);
                     break;
             case "Horario":
