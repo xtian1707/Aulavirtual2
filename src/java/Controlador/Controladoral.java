@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class Controlador extends HttpServlet {
+public class Controladoral extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,24 +28,24 @@ public class Controlador extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String accion=request.getParameter("accion");
-        switch (accion){
-            case "Principal": 
-                request.getRequestDispatcher("Principal.jsp").forward(request, response);
+        String accion2=request.getParameter("accion");
+        switch (accion2){
+            case "Principalal": 
+                request.getRequestDispatcher("Principalal.jsp").forward(request, response);
                 break;
-            case "Cursos":
-                request.getRequestDispatcher("Cursos.jsp").forward(request, response);
+            case "Cursosal":
+                request.getRequestDispatcher("Cursosal.jsp").forward(request, response);
                     break;
-            case "Notas":
-                request.getRequestDispatcher("Notas.jsp").forward(request, response);
+            case "Notasal":
+                request.getRequestDispatcher("Notasal.jsp").forward(request, response);
                     break;
-            case "Horario":
-                request.getRequestDispatcher("Horario.jsp").forward(request, response);
+            case "Horarioal":
+                request.getRequestDispatcher("Horarioal.jsp").forward(request, response);
                     break;
-                    case "saludo":
-                request.getRequestDispatcher("saludo.jsp").forward(request, response);
+                    case "saludoal":
+                request.getRequestDispatcher("saludoal.jsp").forward(request, response);
                     break;
-                        default:
+             default:
                         throw new AssertionError();
         }
     

@@ -18,10 +18,11 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class Validar extends HttpServlet {
+public class Validaral extends HttpServlet {
 
-    UsuariosDao pdao =new  UsuariosDao();
-    Usuarios em=new Usuarios();
+    UsuariosDao pdao2 =new  UsuariosDao();
+    Usuarios em2=new Usuarios();
+ 
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -66,15 +67,16 @@ public class Validar extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String accion=request.getParameter("accion");
-        if(accion.equalsIgnoreCase("Ingresar")){
+ 
+        String accion2=request.getParameter("accion");
+        if(accion2.equalsIgnoreCase("Ingresar")){
             String user=request.getParameter("txtusuario");
             String pass=request.getParameter("txtpass");
-            em= pdao.validar(user, pass);
-            if(em.getUsuario()!= null){
-                request.setAttribute("usuario", em);
-                request.getRequestDispatcher("Controlador?accion=Principal").forward( request, response);
-                request.getRequestDispatcher("Controlador?accion=saludo").forward( request, response);
+            em2=pdao2.validar2(user,pass);
+            if(em2.getUsuario()!= null){
+                request.setAttribute("usuario", em2);
+                request.getRequestDispatcher("Controlador?accion=Principalal").forward( request, response);
+                request.getRequestDispatcher("Controlador?accion=saludoal").forward( request, response);
             }else{
                 request.getRequestDispatcher("index.jsp").forward( request, response);;
             }
@@ -91,7 +93,6 @@ public class Validar extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-   
-    }
+   }
 }
 

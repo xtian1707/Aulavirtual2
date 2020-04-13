@@ -8,23 +8,24 @@
     </head>
     <body><nav class="navbar navbar-expand-lg navbar-light bg-info">
             <a style="color: white" class="navbar-brand">Aula Virtual</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul  class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a style="border: none" class="btn btn-outline-light" href="Controlador?accion=saludo"  target="hola" >Inicio</a>
+        <a style="border: none" class="btn btn-outline-light" href="Controlador?accion=saludoal"  target="hola" >Inicio</a>
       </li>
       <li class="nav-item">
-          <a style="border: none" class="btn btn-outline-light" href="Controlador?accion=Cursos" target="hola" >Cursos / Tarea</a>
+          <a style="border: none" class="btn btn-outline-light" href="Controlador?accion=Cursosal" target="hola" >Cursos / Tarea</a>
       </li>
       <li class="nav-item">
-        <a  style="border: none" class="btn btn-outline-light" href="Controlador?accion=Notas" target="hola">Notas</a>
+        <a  style="border: none" class="btn btn-outline-light" href="Controlador?accion=Notasal" target="hola">Notas</a>
       </li>
             <li class="nav-item">
-                <a  style="border: none" class="btn btn-outline-light" href="Controlador?accion=Horario" target="hola" >Mi horario</a>
+                <a  style="border: none" class="btn btn-outline-light" href="Controlador?accion=Horarioal" target="hola" >Mi horario</a>
       </li>
                    
     </ul>
